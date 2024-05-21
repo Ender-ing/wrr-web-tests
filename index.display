@@ -1,0 +1,124 @@
+<x-root>
+
+    <h1>{{title}}</h1>
+    <h4>{{description}}</h4>
+
+    <divider/>
+
+    <h2>{{language.title}}</h2>
+    <h4>{{language.description}}</h4>
+     <!-- Language selector -->
+    <form id="lang-form">
+        <radio id="cats-radio-" name="lang" value="en"/>
+        <label for="cats-radio-">{{$language.english}}</label>
+        <br/>
+        <radio id="dogs-radio-" name="lang" value="ar"/>
+        <label for="dogs-radio-">{{$language.arabic}}</label>
+        <br/>
+        <radio id="birds-radio-" name="lang" value="he"/>
+        <label for="birds-radio-">{{$language.hebrew}}</label>
+        <br/>
+    </form>
+    <script>
+        const form = document.getElementById("lang-form");
+        const catsRadio = document.getElementById("cats-radio-");
+        const dogsRadio = document.getElementById("dogs-radio-");
+        const birdsRadio = document.getElementById("birds-radio-");
+        const checkLang = function() {
+            let selectedValue;
+            if (catsRadio.checked) {
+                selectedValue = catsRadio.value; 
+            } else if (dogsRadio.checked) {
+                selectedValue = dogsRadio.value;
+            } else if (birdsRadio.checked) {
+                selectedValue = birdsRadio.value;
+            }
+            document.documentElement.setCookie("locale", selectedValue);
+        };
+        form.addEventListener('change', checkLang);
+    </script>
+
+    <divider/>
+
+    <h2>{{scheme.title}}</h2>
+    <h4>{{scheme.description}}</h4>
+    <!-- Colour scheme selector -->
+    <form id="scheme-form">
+        <radio id="0-radio-" name="scheme" value="0"/>
+        <label for="0-radio-">{{scheme.option.light}[`light`]}</label>
+        <br/>
+        <radio id="1-radio-" name="scheme" value="1"/>
+        <label for="1-radio-">{{scheme.option.light_high_contrast}[`light-high-contrast`]}</label>
+        <br/>
+        <radio id="2-radio-" name="scheme" value="2"/>
+        <label for="2-radio-">{{scheme.option.light_medium_contrast}[`light-medium-contrast`]}</label>
+        <br/>
+        <radio id="3-radio-" name="scheme" value="3"/>
+        <label for="3-radio-">{{scheme.option.dark}[`dark`]}</label>
+        <br/>
+        <radio id="4-radio-" name="scheme" value="4"/>
+        <label for="4-radio-">{{scheme.option.dark_high_contrast}[`dark-high-contrast`]}</label>
+        <br/>
+        <radio id="5-radio-" name="scheme" value="5"/>
+        <label for="5-radio-">{{scheme.option.dark_medium_contrast}[`dark-medium-contrast`]}</label>
+        <br/>
+        <radio id="6-radio-" name="scheme" value="6"/>
+        <label for="6-radio-">{{scheme.option.auto}}</label>
+        <br/>
+    </form>
+    <script>
+        const form = document.getElementById("scheme-form");
+        const radio_0 = document.getElementById("0-radio-");
+        const radio_1 = document.getElementById("1-radio-");
+        const radio_2 = document.getElementById("2-radio-");
+        const radio_3 = document.getElementById("3-radio-");
+        const radio_4 = document.getElementById("4-radio-");
+        const radio_5 = document.getElementById("5-radio-");
+        const radio_6 = document.getElementById("6-radio-");
+        const checkScheme = function() {
+            let selectedValue;
+            if (radio_0.checked) {
+                selectedValue = 0;
+            } else if (radio_1.checked) {
+                selectedValue = 1;
+            } else if (radio_2.checked) {
+                selectedValue = 2;
+            } else if (radio_3.checked) {
+                selectedValue = 3;
+            } else if (radio_4.checked) {
+                selectedValue = 4;
+            } else if (radio_5.checked) {
+                selectedValue = 5;
+            }if (radio_6.checked) {
+                selectedValue = 6;
+            }
+            document.documentElement.setCookie("scheme", selectedValue);
+        };
+        form.addEventListener('change', checkScheme);
+    </script>
+
+    <divider/>
+
+    <h2>{{links.title}}</h2>
+    <h4>{{links.description}}</h4>
+
+    <!-- test links -->
+    <list style="max-width: 300px;">
+        <list-item interactive="true" href="/render-activity-1/">
+          <div slot="headline">{{links.option.render_activity_1.headline}}</div>
+          <div slot="supporting-text">{{links.option.render_activity_1.text}[`/render-activity-1/`]}</div>
+          <icon slot="end">link</icon>
+        </list-item>
+        <list-item interactive="true" href="/render-activity-2/">
+            <div slot="headline">{{links.option.render_activity_2.headline}}</div>
+            <div slot="supporting-text">{{links.option.render_activity_2.text}[`/render-activity-2/`]}</div>
+            <icon slot="end">link</icon>
+        </list-item>
+        <list-item interactive="true" href="/layout-activity-1/">
+            <div slot="headline">{{links.option.layout_activity_1.headline}}</div>
+            <div slot="supporting-text">{{links.option.layout_activity_1.text}[`/layout-activity-1/`]}</div>
+            <icon slot="end">link</icon>
+        </list-item>
+      </list>
+
+</x-root>

@@ -1,0 +1,6 @@
+<navigation-rail slot="nav-rail">
+    <navigation-tab id="nav-rail-home" label="Home"></navigation-tab>
+    <navigation-tab id="nav-rail-profile" label="Profile"></navigation-tab>
+    <navigation-tab id="nav-rail-settings" label="Settings"></navigation-tab>
+    <navigation-tab id="nav-rail-alerts" label="Notifications" badge-value="3" show-badge=""></navigation-tab>
+</navigation-rail>

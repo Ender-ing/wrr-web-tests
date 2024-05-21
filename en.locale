@@ -1,0 +1,43 @@
+{
+    "title": "Welcome to the tests page!",
+    "description": "You may use this page to test all the web-client features.",
+    "language": {
+        "title": "Language Selector",
+        "description": "You may select your preferred display language from the list below:"
+    },
+    "scheme": {
+        "title": "Colour Scheme Selector",
+        "description": "You may select your preferred display colour scheme from the list below:",
+        "option": {
+            "light": "Light - $1",
+            "light_high_contrast": "Light (High Contrast) - $1",
+            "light_medium_contrast": "Light (Medium Contrast) - $1",
+            "dark": "Dark - $1",
+            "dark_high_contrast": "Dark (High Contrast) - $1",
+            "dark_medium_contrast": "Dark (Medium Contrast) - $1",
+            "auto": "System (Auto)"
+        }
+    },
+    "links": {
+        "title": "Test Links",
+        "description": "Below is a list of different tests:",
+        "option": {
+            "render_activity_1": {
+                "headline": "Render Activity #1",
+                "text": "Test all available Material Design components. ($1)"
+            },
+            "render_activity_2": {
+                "headline": "Render Activity #2",
+                "text": "A supporting page for Render Activity #1. ($1)"
+            },
+            "layout_activity_1": {
+                "headline": "Layout Activity #1",
+                "text": "Test a basic layout page. ($1)"
+            }
+        }
+    },
+    "_meta": {
+        "title": "{{title}}",
+        "description": "{{description}}"
+    }
+}

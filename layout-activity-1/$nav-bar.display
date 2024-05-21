@@ -1,0 +1,6 @@
+<navigation-bar slot="nav-bar">
+    <navigation-tab id="nav-bar-home" label="Home"></navigation-tab>
+    <navigation-tab id="nav-bar-profile" label="Profile"></navigation-tab>
+    <navigation-tab id="nav-bar-settings" label="Settings"></navigation-tab>
+    <navigation-tab id="nav-bar-alerts" label="Notifications" badge-value="3" show-badge=""></navigation-tab>
+</navigation-bar>

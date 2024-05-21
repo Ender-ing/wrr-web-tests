@@ -1,0 +1,26 @@
+<x-layout view="collapse">
+    <$nav-bar @active="nav-bar-settings"/>
+    <$nav-rail @active="nav-rail-settings"/>
+    <div slot="group" view="static sticky">
+        <!-- You may also custom-set the static width of the group using inline css! -->
+        <!-- Note to self: support dynamic split layout (like https://vaadin.com/docs/latest/components/split-layout) -->
+        <x-float>
+            <h1>{{title}}</h1>
+            <text>{{description}[`aaa`, `aaaa`]}</text>
+        </x-float>
+        <x-pane>
+            [pane content]
+        </x-pane>
+        <x-pane>
+            [pane content]
+        </x-pane>
+    </div>
+    <div slot="group">
+        <x-pane view="full">
+            [pane content]
+        </x-pane>
+        <x-pane style="height: 400px;">
+            [pane content]
+        </x-pane>
+    </div>
+</x-layout>

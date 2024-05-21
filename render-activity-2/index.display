@@ -1,0 +1,11 @@
+<x-root>
+
+    <!-- Checkout https://material-web.dev/ for more info -->
+
+    <!-- Page loading -->
+    <h1>Page Loading</h1>
+    <divider/>
+    <text-button href="/render-activity-1/">/render-activity-1/</text-button>
+    <br/>
+
+</x-root>

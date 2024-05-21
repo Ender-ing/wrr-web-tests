@@ -1,0 +1,8 @@
+{
+    "title": "نشاط التخطيط",
+    "description": "هذه صفحة ذات تخطيط أساسي!",
+    "_meta": {
+        "title": "{{title}}",
+        "description": "{{description}}"
+    }
+}

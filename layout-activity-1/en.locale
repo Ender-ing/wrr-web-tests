@@ -1,0 +1,8 @@
+{
+    "title": "Layout Activity",
+    "description": "This is a page with a basic layout!",
+    "_meta": {
+        "title": "{{title}}",
+        "description": "{{description}}"
+    }
+}

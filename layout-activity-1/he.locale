@@ -1,0 +1,8 @@
+{
+    "title": "פעילות פריסה",
+    "description": "זהו עמוד עם פריסה בסיסית!",
+    "_meta": {
+        "title": "{{title}}",
+        "description": "{{description}}"
+    }
+}
