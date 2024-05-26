@@ -10,13 +10,13 @@
      <!-- Language selector -->
     <form id="lang-form">
         <radio id="cats-radio-" name="lang" value="en"/>
-        <label for="cats-radio-">{{$language.english}}</label>
+        <label for="cats-radio-">{{$language.english}} ({{$en:language.english}})</label>
         <br/>
         <radio id="dogs-radio-" name="lang" value="ar"/>
-        <label for="dogs-radio-">{{$language.arabic}}</label>
+        <label for="dogs-radio-">{{$language.arabic}} ({{$ar:language.arabic}})</label>
         <br/>
         <radio id="birds-radio-" name="lang" value="he"/>
-        <label for="birds-radio-">{{$language.hebrew}}</label>
+        <label for="birds-radio-">{{$language.hebrew}} ({{$he:language.hebrew}})</label>
         <br/>
     </form>
     <script>
