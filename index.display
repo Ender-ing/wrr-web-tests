@@ -103,7 +103,7 @@
     <h4>{{links.description}}</h4>
 
     <!-- test links -->
-    <list style="max-width: 300px;">
+    <list>
         <list-item interactive="true" href="/render-activity-1/">
           <div slot="headline">{{links.option.render_activity_1.headline}}</div>
           <div slot="supporting-text">{{links.option.render_activity_1.text}[`/render-activity-1/`]}</div>
