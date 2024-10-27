@@ -72,22 +72,22 @@
     <h1>X-Effect</h1>
     <divider/>
     <x-effect list="ripple">
-        <div role="child" style="width: 100px; height: 100px;">
+        <div slot="child" style="width: 100px; height: 100px;">
             (ripple)
         </div>
     </x-effect>
     <x-effect list="elevation">
-        <div role="child" style="width: 100px; height: 100px;">
+        <div slot="child" style="width: 100px; height: 100px;">
             (elevation)
         </div>
     </x-effect>
     <x-effect list="elevation ripple">
-        <div role="child" style="width: 100px; height: 100px;">
+        <div slot="child" style="width: 100px; height: 100px;">
             (elevation, ripple)
         </div>
     </x-effect>
     <x-effect list="focus elevation ripple">
-        <div role="child" style="width: 100px; height: 100px;">
+        <div slot="child" style="width: 100px; height: 100px;">
             (focus, elevation, ripple)
         </div>
     </x-effect>
