@@ -119,6 +119,6 @@
             <div slot="supporting-text">{{links.option.layout_activity_1.text}[`/layout-activity-1/`]}</div>
             <icon slot="end">link</icon>
         </list-item>
-      </list>
+    </list>
 
 </x-root>
