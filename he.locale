@@ -36,6 +36,16 @@
             }
         }
     },
+    "tools": {
+        "title": "כלי עזר",
+        "description": "להלן רשימה של כלי עזר שונים:",
+        "option": {
+            "unicode_hex_converter": {
+                "headline": "ממיר של Hex Unicode",
+                "text": "המר במהירות ייצוגי Hex Unicode לטקסט!"
+            }
+        }
+    },
     "_meta": {
         "title": "{{title}}",
         "description": "{{description}}"

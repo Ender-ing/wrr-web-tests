@@ -1,0 +1,14 @@
+{
+    "title": "Unicode Hex converter",
+    "description": "Convert Hex Unicode character representations to raw characters!",
+    "field": {
+        "input": "Hex input"
+    },
+    "button": {
+        "convert": "Convert & Copy to Clipboard"
+    },
+    "_meta": {
+        "title": "{{title}}",
+        "description": "{{description}}"
+    }
+}

@@ -1,0 +1,22 @@
+<x-layout>
+    <div slot="group">
+        <x-pane view="full">
+            <h1>{{title}}</h1>
+            <divider />
+            <text>{{description}}</text>
+            <br/>
+            <form id="input-form">
+                <filled-text-field id="input" label="{{field.input}}" placeholder="89ABC" required="" maxLength="6"></filled-text-field>
+                <filled-button id="button" role="presentation">{{button.convert}}</filled-button>
+            </form>
+        </x-pane>
+        <script>
+            const input = document.getElementById("input"),
+            button = document.getElementById("button");
+            button.onclick = () => {
+                const hex = input.value.padStart(6, '0');
+                navigator.clipboard.writeText(String.fromCharCode(parseInt(hex, 16)));
+            }
+        </script>
+    </div>
+</x-layout>

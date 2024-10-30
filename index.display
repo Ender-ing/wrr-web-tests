@@ -121,4 +121,18 @@
         </list-item>
     </list>
 
+    <divider/>
+
+    <h2>{{tools.title}}</h2>
+    <h4>{{tools.description}}</h4>
+
+    <!-- Utilities links -->
+    <list>
+        <list-item interactive="true" href="/tools/unicode-hex-converter/">
+          <div slot="headline">{{tools.option.unicode_hex_converter.headline}}</div>
+          <div slot="supporting-text">{{tools.option.unicode_hex_converter.text}}</div>
+          <icon slot="end">link</icon>
+        </list-item>
+    </list>
+
 </x-root>

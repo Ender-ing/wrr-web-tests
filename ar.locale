@@ -36,6 +36,16 @@
             }
         }
     },
+    "tools": {
+        "title": "أدوات المساعدة",
+        "description": "فيما يلي قائمة بالأدوات المساعدة المختلفة:",
+        "option": {
+            "unicode_hex_converter": {
+                "headline": "محول Unicode Hex",
+                "text": "تحويل تمثيلات Hex Unicode إلى نص بسرعة!"
+            }
+        }
+    },
     "_meta": {
         "title": "{{title}}",
         "description": "{{description}}"

@@ -1,0 +1,14 @@
+{
+    "title": "ממיר של Hex Unicode",
+    "description": "המר ייצוגי תווים של Hex Unicode לתווים גולמיים!",
+    "field": {
+        "input": "קלט Hex"
+    },
+    "button": {
+        "convert": "המר והעתק ללוח"
+    },
+    "_meta": {
+        "title": "{{title}}",
+        "description": "{{description}}"
+    }
+}

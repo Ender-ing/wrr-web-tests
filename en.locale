@@ -36,6 +36,16 @@
             }
         }
     },
+    "tools": {
+        "title": "Utilities",
+        "description": "Below is a list of different utilities:",
+        "option": {
+            "unicode_hex_converter": {
+                "headline": "Unicode Hex converter",
+                "text": "Quickly convert Hex Unicode representations to text!"
+            }
+        }
+    },
     "_meta": {
         "title": "{{title}}",
         "description": "{{description}}"

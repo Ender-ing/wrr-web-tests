@@ -1,0 +1,14 @@
+{
+    "title": "محول Unicode Hex",
+    "description": "تحويل حرف Hex Unicode إلى حرف خام!",
+    "field": {
+        "input": "إدخال Hex"
+    },
+    "button": {
+        "convert": "تحويل ونسخ إلى الحافظة"
+    },
+    "_meta": {
+        "title": "{{title}}",
+        "description": "{{description}}"
+    }
+}
