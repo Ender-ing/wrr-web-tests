@@ -2,7 +2,7 @@
     "title": "Unicode Hex converter",
     "description": "Convert Hex Unicode character representations to raw characters!",
     "field": {
-        "input": "Hex input"
+        "input": "Input"
     },
     "button": {
         "convert": "Convert &amp; Copy to Clipboard",

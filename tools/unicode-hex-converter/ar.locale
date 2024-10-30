@@ -2,7 +2,7 @@
     "title": "محول Unicode Hex",
     "description": "تحويل حرف Hex Unicode إلى حرف خام!",
     "field": {
-        "input": "إدخال Hex"
+        "input": "إدخال"
     },
     "button": {
         "convert": "تحويل ونسخ إلى الحافظة",
