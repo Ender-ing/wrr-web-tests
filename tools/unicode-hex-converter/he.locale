@@ -2,7 +2,9 @@
     "title": "ממיר של Hex Unicode",
     "description": "המר ייצוגי תווים של Hex Unicode לתווים גולמיים!",
     "field": {
-        "input": "קלט"
+        "input": "קלט",
+        "support_hex": "Hex Unicode לטקסט",
+        "support_secret_id": "עטיפה של מזהה סודי גולמי"
     },
     "button": {
         "convert": "המר והעתק ללוח",

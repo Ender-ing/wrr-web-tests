@@ -6,14 +6,16 @@
         </x-float>
         <x-pane>
             <form id="hex-form">
-                <filled-text-field id="hex-input" label="{{field.input}}" placeholder="89ABC" required="" maxLength="6"></filled-text-field>
+                <filled-text-field id="hex-input" label="{{field.input}}" placeholder="89ABC" required="" maxLength="6"
+                        supporting-text="{{field.support_hex}}"></filled-text-field>
                 <filled-button id="hex-button" role="presentation">{{button.convert}}</filled-button>
                 <filled-tonal-button id="hex-button-ext" role="presentation">{{button.convert_extra}}</filled-tonal-button>
             </form>
         </x-pane>
         <x-pane>
             <form id="web-secret-id-form">
-                <filled-text-field id="web-secret-id-input" label="{{field.input}}" placeholder="MY-ID-NAME" required="" minLength="1" maxLength="32"></filled-text-field>
+                <filled-text-field id="web-secret-id-input" label="{{field.input}}" placeholder="MY-ID-NAME" required=""
+                        minLength="1" maxLength="32" supporting-text="{{field.support_secret_id}}"></filled-text-field>
                 <filled-button id="web-secret-id-button" role="presentation">{{button.convert_extra}}</filled-button>
             </form>
         </x-pane>
