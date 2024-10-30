@@ -23,8 +23,8 @@
                 navigator.clipboard.writeText(parseHexUni(hex));
             }
             button_ext.onclick = () => {
-                const standardStart = parseHexUni(`\uE0DE`),
-                standardEnd = parseHexUni(`\uE1DE`);
+                const standardStart = parseHexUni(`E0DE`),
+                standardEnd = parseHexUni(`E1DE`);
                 const hex = input.value.padStart(6, '0');
                 navigator.clipboard.writeText(
                     standardStart +
