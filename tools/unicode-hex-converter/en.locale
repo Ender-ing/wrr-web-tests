@@ -1,9 +1,9 @@
 {
     "title": "Unicode Hex converter",
-    "description": "Convert Hex Unicode character representations to raw characters!",
+    "description": "Convert Unicode Hex character representations to raw characters!",
     "field": {
         "input": "Input",
-        "support_hex": "Hex Unicode to Text",
+        "support_hex": "Unicode Hex to Text",
         "support_secret_id": "Raw Secret ID wrapper"
     },
     "button": {

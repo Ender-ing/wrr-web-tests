@@ -1,9 +1,9 @@
 {
     "title": "محول Unicode Hex",
-    "description": "تحويل حرف Hex Unicode إلى حرف خام!",
+    "description": "تحويل حرف Unicode Hex إلى حرف خام!",
     "field": {
         "input": "إدخال",
-        "support_hex": "Hex Unicode إلى نص",
+        "support_hex": "Unicode Hex إلى نص",
         "support_secret_id": "غلاف معرف سري خام"
     },
     "button": {

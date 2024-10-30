@@ -41,8 +41,8 @@
         "description": "להלן רשימה של כלי עזר שונים:",
         "option": {
             "unicode_hex_converter": {
-                "headline": "ממיר של Hex Unicode",
-                "text": "המר במהירות ייצוגי Hex Unicode לטקסט!"
+                "headline": "ממיר של Unicode Hex",
+                "text": "המר במהירות ייצוגי Unicode Hex לטקסט!"
             }
         }
     },

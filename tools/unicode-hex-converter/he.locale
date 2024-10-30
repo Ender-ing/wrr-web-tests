@@ -1,9 +1,9 @@
 {
-    "title": "ממיר של Hex Unicode",
-    "description": "המר ייצוגי תווים של Hex Unicode לתווים גולמיים!",
+    "title": "ממיר של Unicode Hex",
+    "description": "המר ייצוגי תווים של Unicode Hex לתווים גולמיים!",
     "field": {
         "input": "קלט",
-        "support_hex": "Hex Unicode לטקסט",
+        "support_hex": "Unicode Hex לטקסט",
         "support_secret_id": "עטיפה של מזהה סודי גולמי"
     },
     "button": {

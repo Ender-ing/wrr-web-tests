@@ -42,7 +42,7 @@
         "option": {
             "unicode_hex_converter": {
                 "headline": "محول Unicode Hex",
-                "text": "تحويل تمثيلات Hex Unicode إلى نص بسرعة!"
+                "text": "تحويل تمثيلات Unicode Hex إلى نص بسرعة!"
             }
         }
     },
