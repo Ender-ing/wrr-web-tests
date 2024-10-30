@@ -5,7 +5,8 @@
         "input": "Hex input"
     },
     "button": {
-        "convert": "Convert & Copy to Clipboard"
+        "convert": "Convert & Copy to Clipboard",
+        "convert_extra": "With Ender PUA markers"
     },
     "_meta": {
         "title": "{{title}}",

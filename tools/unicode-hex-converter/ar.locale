@@ -5,7 +5,8 @@
         "input": "إدخال Hex"
     },
     "button": {
-        "convert": "تحويل ونسخ إلى الحافظة"
+        "convert": "تحويل ونسخ إلى الحافظة",
+        "convert_extra": "مع علامات Ender PUA"
     },
     "_meta": {
         "title": "{{title}}",

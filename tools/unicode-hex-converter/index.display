@@ -8,14 +8,29 @@
             <form id="input-form">
                 <filled-text-field id="input" label="{{field.input}}" placeholder="89ABC" required="" maxLength="6"></filled-text-field>
                 <filled-button id="button" role="presentation">{{button.convert}}</filled-button>
+                <filled-tonal-button id="button-ext" role="presentation">{{button.convert_extra}}</filled-tonal-button>
             </form>
         </x-pane>
         <script>
             const input = document.getElementById("input"),
-            button = document.getElementById("button");
+            button = document.getElementById("button"),
+            button_ext = document.getElementById("button-ext");
+            function parseHexUni(hex){
+                return String.fromCharCode(parseInt(hex, 16))
+            }
             button.onclick = () => {
                 const hex = input.value.padStart(6, '0');
-                navigator.clipboard.writeText(String.fromCharCode(parseInt(hex, 16)));
+                navigator.clipboard.writeText(parseHexUni(hex));
+            }
+            button_ext.onclick = () => {
+                const standardStart = parseHexUni(`\uE0DE`),
+                standardEnd = parseHexUni(`\uE1DE`);
+                const hex = input.value.padStart(6, '0');
+                navigator.clipboard.writeText(
+                    standardStart +
+                    parseHexUni(hex) +
+                    standardEnd
+                );
             }
         </script>
     </div>
