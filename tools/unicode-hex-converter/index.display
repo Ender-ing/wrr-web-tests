@@ -1,21 +1,22 @@
 <x-layout>
     <div slot="group">
-        <x-pane view="full">
+        <x-float>
             <h1>{{title}}</h1>
-            <divider />
             <text>{{description}}</text>
-            <br/>
+        </x-float>
+        <x-pane>
             <form id="hex-form">
                 <filled-text-field id="hex-input" label="{{field.input}}" placeholder="89ABC" required="" maxLength="6"></filled-text-field>
                 <filled-button id="hex-button" role="presentation">{{button.convert}}</filled-button>
                 <filled-tonal-button id="hex-button-ext" role="presentation">{{button.convert_extra}}</filled-tonal-button>
             </form>
         </x-pane>
-        <divider />
+        <x-pane>
             <form id="web-secret-id-form">
                 <filled-text-field id="web-secret-id-input" label="{{field.input}}" placeholder="MY-ID-NAME" required="" minLength="1" maxLength="32"></filled-text-field>
                 <filled-button id="web-secret-id-button" role="presentation">{{button.convert_extra}}</filled-button>
             </form>
+        </x-pane>
         <script>
             // Standard start and end values!
             const standardStart = parseHexUni(`E0DE`),
