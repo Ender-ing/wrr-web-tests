@@ -6,7 +6,7 @@
         </x-float>
         <x-pane>
             <form id="hex-form">
-                <filled-text-field id="hex-input" label="{{field.input}}" placeholder="89ABC" required="" maxLength="6"
+                <filled-text-field id="hex-input" label="{{field.input}}" placeholder="89AB" required="" maxLength="4"
                         supporting-text="{{field.support_hex}}"></filled-text-field>
                 <filled-button id="hex-button" role="presentation">{{button.convert}}</filled-button>
                 <filled-tonal-button id="hex-button-ext" role="presentation">{{button.convert_extra}}</filled-tonal-button>
@@ -15,14 +15,14 @@
         <x-pane>
             <form id="web-secret-id-form">
                 <filled-text-field id="web-secret-id-input" label="{{field.input}}" placeholder="MY-ID-NAME" required=""
-                        minLength="1" maxLength="32" supporting-text="{{field.support_secret_id}}"></filled-text-field>
+                        minLength="1" maxLength="64" supporting-text="{{field.support_secret_id}}"></filled-text-field>
                 <filled-button id="web-secret-id-button" role="presentation">{{button.convert_extra}}</filled-button>
             </form>
         </x-pane>
         <script>
             // Standard start and end values!
-            const standardStart = parseHexUni(`10E0DE`),
-            standardEnd = parseHexUni(`10E1DE`);
+            const standardStart = parseHexUni(`E0DE`),
+            standardEnd = parseHexUni(`E1DE`);
             function parseHexUni(hex){
                 return String.fromCharCode(parseInt(hex, 16));
             }
@@ -48,16 +48,16 @@
             const webSecretInput = document.getElementById("web-secret-id-input"),
             webSecretButton = document.getElementById("web-secret-id-button");
             // Web secret values
-            const webSecretStart = parseHexUni(`10E201`),
-            webSecretEnd = parseHexUni(`10E202`);
+            const webSecretStart = parseHexUni(`E201`),
+            webSecretEnd = parseHexUni(`E202`);
 
             // Hex actions
             hexButton.onclick = () => {
-                const hex = hexInput.value.padStart(6, '0');
+                const hex = hexInput.value.padStart(4, '0');
                 navigator.clipboard.writeText(parseHexUni(hex));
             }
             hexButtonExt.onclick = () => {
-                const hex = hexInput.value.padStart(6, '0');
+                const hex = hexInput.value.padStart(4, '0');
                 navigator.clipboard.writeText(parseHexUniEnclosed(hex));
             }
 
