@@ -68,6 +68,19 @@
     </script>
     <br/>
 
+    <!-- Content separation -->
+    <h1>X-Content</h1>
+    <divider/>
+    <h4>Margin: Vertical &amp; Horizontal</h4>
+    <x-content margin="vertical horizontal">
+        <!--- this will apply vertical and horizontal margins to the children of the <x-content> element! -->
+        <icon slot="icon">edit</icon>
+        <icon slot="icon">edit</icon>
+        <icon slot="icon">edit</icon>
+        <icon slot="icon">edit</icon>
+        <icon slot="icon">edit</icon>
+    </x-content>
+
     <!-- Focus effect -->
     <h1>X-Effect</h1>
     <divider/>
